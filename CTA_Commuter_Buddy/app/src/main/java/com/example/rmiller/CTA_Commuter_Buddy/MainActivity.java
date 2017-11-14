@@ -184,7 +184,6 @@ public class MainActivity extends AppCompatActivity {
                         ad.dismiss();
                     } else {
                         Toast.makeText(MainActivity.this, getString(R.string.field_blank), Toast.LENGTH_LONG).show();
-                        dialogPopup();
                     }
                     return true;
                 }
