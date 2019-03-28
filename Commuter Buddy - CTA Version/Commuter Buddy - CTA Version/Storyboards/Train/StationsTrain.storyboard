@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="61j-YW-F1O">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stations View Controller-->
+        <scene sceneID="Fgo-el-vjR">
+            <objects>
+                <viewController id="61j-YW-F1O" customClass="StationsViewController" customModule="Commuter_Buddy___CTA_Version" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jmq-13-Vyv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c7Z-G7-hJt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="stations" textLabel="2Yv-tB-mPq" style="IBUITableViewCellStyleDefault" id="XRN-xO-NFN">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XRN-xO-NFN" id="bi1-sJ-crh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" id="2Yv-tB-mPq">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="75"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Kqb-a7-tom" kind="show" id="tTk-eT-izO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c7Z-G7-hJt" firstAttribute="leading" secondItem="oKF-Ts-t2j" secondAttribute="leading" id="FFL-SN-r8o"/>
+                            <constraint firstItem="c7Z-G7-hJt" firstAttribute="top" secondItem="oKF-Ts-t2j" secondAttribute="top" id="kDz-rh-U11"/>
+                            <constraint firstItem="c7Z-G7-hJt" firstAttribute="trailing" secondItem="oKF-Ts-t2j" secondAttribute="trailing" id="ktW-dx-Eih"/>
+                            <constraint firstItem="c7Z-G7-hJt" firstAttribute="bottom" secondItem="oKF-Ts-t2j" secondAttribute="bottom" id="sBz-zj-Msm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oKF-Ts-t2j"/>
+                    </view>
+                    <connections>
+                        <outlet property="stationList" destination="c7Z-G7-hJt" id="LBq-CL-lCp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7g-7t-RKD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="-232.53373313343329"/>
+        </scene>
+        <!--ArrivalsTrain-->
+        <scene sceneID="NKb-nv-ixR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ArrivalsTrain" id="Kqb-a7-tom" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Axp-Tc-zc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1849" y="-231"/>
+        </scene>
+    </scenes>
+</document>

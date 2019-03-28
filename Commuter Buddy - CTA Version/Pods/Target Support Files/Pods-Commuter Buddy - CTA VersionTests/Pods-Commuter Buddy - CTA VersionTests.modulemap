@@ -1,0 +1,6 @@
+framework module Pods_Commuter_Buddy___CTA_VersionTests {
+  umbrella header "Pods-Commuter Buddy - CTA VersionTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

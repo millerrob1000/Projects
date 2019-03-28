@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Commuter Buddy - CTA Version/Views/AlertsViewController.swift"
+            timestampString = "575240559.573473"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Commuter_Buddy___CTA_Version.AlertsViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Commuter Buddy - CTA Version"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robmiller/Desktop/iOS-Projects/Commuter%20Buddy%20-%20CTA%20Version/Commuter%20Buddy%20-%20CTA%20Version/Views/AlertsViewController.swift"
+                  timestampString = "575230625.92126"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;Commuter_Buddy___CTA_Version.AlertObject&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; () in Commuter_Buddy___CTA_Version.AlertsViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Commuter Buddy - CTA Version"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robmiller/Desktop/iOS-Projects/Commuter%20Buddy%20-%20CTA%20Version/Commuter%20Buddy%20-%20CTA%20Version/Views/AlertsViewController.swift"
+                  timestampString = "575230625.923526"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Commuter Buddy - CTA Version/Shared/URL/XML/XMLParserAlerts.swift"
+            timestampString = "575231578.826743"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "getStationUpdates(_:completion:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Commuter_Buddy___CTA_Version.getStationUpdates(_: Swift.Array&lt;Commuter_Buddy___CTA_Version.Stations&gt;, completion: (Swift.Array&lt;Commuter_Buddy___CTA_Version.AlertObject&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Commuter Buddy - CTA Version"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robmiller/Desktop/iOS-Projects/Commuter%20Buddy%20-%20CTA%20Version/Commuter%20Buddy%20-%20CTA%20Version/Shared/URL/XML/XMLParserAlerts.swift"
+                  timestampString = "575230680.243416"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "8175">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Commuter_Buddy___CTA_Version.AlertObject) -&gt; Swift.String in Commuter_Buddy___CTA_Version.getStationUpdates(_: Swift.Array&lt;Commuter_Buddy___CTA_Version.Stations&gt;, completion: (Swift.Array&lt;Commuter_Buddy___CTA_Version.AlertObject&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Commuter Buddy - CTA Version"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robmiller/Desktop/iOS-Projects/Commuter%20Buddy%20-%20CTA%20Version/Commuter%20Buddy%20-%20CTA%20Version/Shared/URL/XML/XMLParserAlerts.swift"
+                  timestampString = "575230680.245285"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Commuter_Buddy___CTA_Version.AlertObject, Commuter_Buddy___CTA_Version.AlertObject) -&gt; Swift.Bool in Commuter_Buddy___CTA_Version.getStationUpdates(_: Swift.Array&lt;Commuter_Buddy___CTA_Version.Stations&gt;, completion: (Swift.Array&lt;Commuter_Buddy___CTA_Version.AlertObject&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Commuter Buddy - CTA Version"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robmiller/Desktop/iOS-Projects/Commuter%20Buddy%20-%20CTA%20Version/Commuter%20Buddy%20-%20CTA%20Version/Shared/URL/XML/XMLParserAlerts.swift"
+                  timestampString = "575230680.246989"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "34">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Commuter Buddy - CTA Version/Views/AlertsViewController.swift"
+            timestampString = "575240559.573597"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "numberOfSections(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Commuter Buddy - CTA Version/Views/Favorites/FavoritesViewController.swift"
+            timestampString = "575240559.573678"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Commuter Buddy - CTA Version/Views/Favorites/FavoritesViewController.swift"
+            timestampString = "575240559.574194"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Commuter Buddy - CTA Version/Views/Trains/Main_ViewController.swift"
+            timestampString = "575240559.574683"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Commuter Buddy - CTA Version/Views/Favorites/FavoritesViewController.swift"
+            timestampString = "575240559.574772"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Commuter Buddy - CTA Version/Views/Favorites/FavoritesViewController.swift"
+            timestampString = "575240559.5751981"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Commuter_Buddy___CTA_Version.FavoritesViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Commuter Buddy - CTA Version"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robmiller/Desktop/iOS-Projects/Commuter%20Buddy%20-%20CTA%20Version/Commuter%20Buddy%20-%20CTA%20Version/Views/Favorites/FavoritesViewController.swift"
+                  timestampString = "575240258.308517"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "50">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Commuter_Buddy___CTA_Version.FavoritesViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Commuter Buddy - CTA Version"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robmiller/Desktop/iOS-Projects/Commuter%20Buddy%20-%20CTA%20Version/Commuter%20Buddy%20-%20CTA%20Version/Views/Favorites/FavoritesViewController.swift"
+                  timestampString = "575240258.3109469"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "300">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
