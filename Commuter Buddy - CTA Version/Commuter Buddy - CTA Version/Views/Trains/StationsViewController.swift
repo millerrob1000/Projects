@@ -86,14 +86,17 @@ class StationsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let editAction = UITableViewRowAction(style: .normal, title: "Add to Favorites") { (rowAction, indexPath) in
             
-            if !FavoritesViewController.shared.favArray.contains(where: {$0.name == self.railStations[indexPath.row].name && $0.type == self.railStations[indexPath.row].type}) {
+            if !railInfo.favArray.contains(where: {$0.name == self.railStations[indexPath.row].name && $0.type == self.railStations[indexPath.row].type}) {
                 
                 let alertController = UIAlertController(title: "ADDED TO FAVORITES LIST", message: "\(self.railStations[indexPath.row].name) station has been successfully added", preferredStyle: UIAlertController.Style.actionSheet)
                 let confirm = UIAlertAction(title: "OK", style: .default, handler: { action in
                     
                     // MARK: - Observer creation for favorites list
-                    let favData: [String: Stations] = ["favorite": Stations(self.railStations[indexPath.row].name, self.railStations[indexPath.row].mapID, self.railStations[indexPath.row].type)]
-                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "favorite"), object: nil, userInfo: favData)
+                    let favData: Stations = Stations(self.railStations[indexPath.row].name, self.railStations[indexPath.row].mapID, self.railStations[indexPath.row].type)
+                    if !railInfo.favArray.contains(favData) {
+                        railInfo.favArray.append(favData)
+                        insertItems()
+                    }
                 })
                 let cancel = UIAlertAction(title: "CANCEL", style: .cancel, handler: nil)
                 

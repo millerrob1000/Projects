@@ -126,7 +126,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         }
         let getUpdates = message["alerts"] as? String
         if getUpdates != nil {
-            getStationUpdates(FavoritesViewController.shared.favArray, completion: { alertArray, Error in
+            getStationUpdates(railInfo.favArray, completion: { alertArray, Error in
                 let alerts = alertArray
                 NSKeyedArchiver.setClassName("AlertObject", for: AlertObject.self)
                 let encoded: Data = NSKeyedArchiver.archivedData(withRootObject: alerts)
@@ -137,7 +137,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         let getFavs = message["favoritesWatch"] as? String
         if getFavs != nil {
                 NSKeyedArchiver.setClassName("Stations", for: Stations.self)
-                let encoded: Data = NSKeyedArchiver.archivedData(withRootObject: FavoritesViewController.shared.favArray)
+                let encoded: Data = NSKeyedArchiver.archivedData(withRootObject: railInfo.favArray)
                 replyHandler(["favWatchReply":encoded])
         }
     }

@@ -37,7 +37,7 @@ class AlertsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewWillAppear(animated)
         
         // MARK: - Get CTA alerts
-        getStationUpdates(FavoritesViewController.shared.favArray, completion: { alertArray, Error in
+        getStationUpdates(railInfo.favArray, completion: { alertArray, Error in
             self.alertsArray = alertArray
         })
     }
@@ -68,7 +68,7 @@ class AlertsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if alertsArray.count > 0 {
             tableView.backgroundView = nil
             count = 1
-        } else if FavoritesViewController.shared.favArray.isEmpty {
+        } else if railInfo.favArray.isEmpty {
             tableviewMessage(message: "FAVORITES LIST IS EMPTY\nAdd train stations or bus stops to receive alerts")
         }else if alertsArray.isEmpty {
             tableviewMessage(message: "NO CTA ALERTS\nThere are no CTA alerts for the stations or bus stops in your favorites list")

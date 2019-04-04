@@ -6,15 +6,16 @@
 //  Copyright © 2017 Max OSX. All rights reserved.
 //
 struct railInfo {
-    static var trains = lines
-    static var railStationsWatch = [Stations]()
+    static var trains: [Lines] = lines
+    static var railStationsWatch: [Stations] = [Stations]()
+    static var favArray: [Stations] = [Stations]()
 }
 
 import Foundation
 import UIKit
 
 func insertItems() {
-    let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: FavoritesViewController.shared.favArray)
+    let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: railInfo.favArray)
     UserDefaults.standard.set(encodedData, forKey: "favorites")
     UserDefaults.standard.synchronize()
 }
@@ -22,7 +23,7 @@ func insertItems() {
 func retrieveItems() {
     let decoded = UserDefaults.standard.object(forKey: "favorites") as! Data
     let decodedArray = NSKeyedUnarchiver.unarchiveObject(with: decoded) as! [Stations]
-    FavoritesViewController.shared.favArray = decodedArray
+    railInfo.favArray = decodedArray
     UserDefaults.standard.synchronize()
 }
 

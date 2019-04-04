@@ -62,12 +62,12 @@ class StopsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let editAction = UITableViewRowAction(style: .normal, title: "Add to Favorites") { (rowAction, indexPath) in
-            if !FavoritesViewController.shared.favArray.contains(where: {$0.stpid == self.stopList[indexPath.row].stpid}){
+            if !railInfo.favArray.contains(where: {$0.stpid == self.stopList[indexPath.row].stpid}){
                 
                 let alertController = UIAlertController(title: "ADDED TO FAVORITES LIST", message: "\(self.stopList[indexPath.row].stpnm) stop has been successfully added", preferredStyle: UIAlertController.Style.actionSheet)
                 
                 let confirm = UIAlertAction(title: "OK", style: .default, handler: { action in
-                    FavoritesViewController.shared.favArray.append(Stations("","","",self.stopList[indexPath.row].stpid, self.stopList[indexPath.row].stpnm, self.color!, self.route!))
+                    railInfo.favArray.append(Stations("","","",self.stopList[indexPath.row].stpid, self.stopList[indexPath.row].stpnm, self.color!, self.route!))
                     insertItems()
                 })
                 let cancel = UIAlertAction(title: "CANCEL", style: .cancel, handler: nil)
