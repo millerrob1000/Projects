@@ -15,7 +15,6 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var viewLabel: UILabel!
     @IBOutlet var noItemViewLandscape: UIView!
     @IBOutlet weak var viewLabelLandscape: UILabel!
-    static let shared: FavoritesViewController = FavoritesViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
