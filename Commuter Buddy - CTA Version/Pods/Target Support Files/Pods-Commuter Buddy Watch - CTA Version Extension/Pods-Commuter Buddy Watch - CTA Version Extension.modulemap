@@ -1,6 +1,0 @@
-framework module Pods_Commuter_Buddy_Watch___CTA_Version_Extension {
-  umbrella header "Pods-Commuter Buddy Watch - CTA Version Extension-umbrella.h"
-
-  export *
-  module * { export * }
-}
